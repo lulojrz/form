@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/690a9ad192.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Formulario de Contacto</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-section">
+            <ul class="first-list">
+                <li><i class="fa-solid fa-location-crosshairs"></i> Av.abc 123</li>
+                <li><i class="fa-solid fa-envelope"></i>lulojrz18@gmail.com</li>
+                <li><i class="fa-solid fa-phone"></i>123-456-789</li>
+            </ul>
+            <ul class="second-list">
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-x-twitter"></i></li>
+            </ul>
+
+
+
+        </div>
+        <div class="right-section">
+            <h1>Contacto</h1>
+            <form action="https://formsubmit.co/lulojrz18@gmail.com" method="post" id="formulario" target="_blank">
+                <div class="nombre ">
+                    <label for="nombre"> Nombre y Apellido
+                        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su informacion"
+                            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                    </label>
+                </div>
+
+                <div class="correo">
+                    <label for="correo ">Correo electronico
+                        <input type="mail" name="correo" id="correo" placeholder="Ingrese su correo electronico"
+                            pattern=" ^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+
+                    </label>
+                </div>
+                <div class="asunto">
+                    <label for="asunto"> Asunto
+                        <input type="text" name="asunto" id="asunto" placeholder="Ingrese el asunto del mensaje"
+                            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                    </label>
+                </div>
+                <div class="mensaje">
+                    <label for="mensaje">Mensaje
+                        <textarea name="mensaje" id="mensaje" placeholder="Ingrese el mensaje" columns="5"
+                            pattern=" ^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+                            required></textarea>
+                    </label>
+                </div>
+                <div class="btn"><button type="submit">Enviar</button></div>
+
+            </form>
+            <h3 id="respuesta"></h3>
+
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
